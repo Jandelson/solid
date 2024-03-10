@@ -1,0 +1,14 @@
+{
+    "name": "root/solid",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jandelson Oliveira"
+        }
+    ],
+    "require": {}
+}
