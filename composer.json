@@ -10,5 +10,12 @@
             "name": "Jandelson Oliveira"
         }
     ],
-    "require": {}
+    "require": {
+        "phpoffice/phpspreadsheet": "^2.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "kylekatarnls/update-helper": true
+        }
+    }
 }

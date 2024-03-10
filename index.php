@@ -7,7 +7,16 @@ use App\Read;
 $read = new Read;
 
 $read->setDirectory(__DIR__ . '/arquivos');
-$read->setFile('dados.csv');
+
+$data = [];
+
+foreach (['txt', 'csv', 'xlsx'] as $extension) {
+    echo 'read: ' . $extension . '...' . PHP_EOL;
+    $read->setFile('dados.' . $extension);
+    foreach($read->readFile() as $value) {
+        array_push($data,$value);
+    }
+}
 
 print "<pre>";
-print_r($read->readFile());
+print_r($data);
